@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="BeeService — społeczność dla programistów, informatyków i pasjonatów technologii.">
+  <title>BeeService — społeczność technologiczna</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="#home">
+    <img src="assets/logo.png" alt="BeeService logo">
+    <span>Bee<span class="white">Service</span></span>
+  </a>
+
+  <button id="menu-toggle" aria-label="Otwórz menu">☰</button>
+
+  <nav id="nav">
+    <a href="#about">O nas</a>
+    <a href="#areas">Strefy</a>
+    <a href="#projects">Projekty</a>
+    <a href="#join" class="nav-button">Dołącz ↗</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero section" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">🐝 SPOŁECZNOŚĆ LUDZI TECHNOLOGII</span>
+      <h1>Twórz. Ucz się.<br><span>Rój się od pomysłów.</span></h1>
+      <p>
+        Miejsce dla programistów, informatyków, administratorów
+        serwerów i wszystkich ciekawych technologii.
+        Wymieniaj wiedzę, buduj projekty i rozwijaj się razem z nami.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="#join">Dołącz do społeczności ↗</a>
+        <a class="button secondary" href="#about">Poznaj nas ↓</a>
+      </div>
+
+      <div class="note">✦ Dla początkujących i zaawansowanych</div>
+    </div>
+
+    <div class="hero-image">
+      <div class="glow"></div>
+      <img src="assets/logo.png" alt="Logo społeczności BeeService">
+      <div class="floating-card">⌨️ &nbsp; Code. Build. Connect.</div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    PROGRAMOWANIE　✳　LINUX & SERWERY　✳　
+    CYBERBEZPIECZEŃSTWO　✳　AI & AUTOMATYZACJA　✳　OPEN SOURCE
+  </div>
+
+  <section class="section" id="about">
+    <span class="eyebrow">01 / POZNAJ NAS</span>
+    <h2>Więcej niż <span>kolejny serwer.</span></h2>
+
+    <div class="about-grid">
+      <p class="lead">
+        BeeService łączy ludzi, których napędza ciekawość i chęć
+        tworzenia. Nieważne, czy piszesz pierwszy skrypt, czy
+        administrujesz własnymi serwerami — jest tu miejsce dla Ciebie.
+      </p>
+
+      <div class="features">
+        <article>
+          <span>01</span>
+          <div>
+            <h3>Ucz się od innych</h3>
+            <p>Zadawaj pytania, rozwiązuj problemy i poznawaj nowe technologie.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>02</span>
+          <div>
+            <h3>Buduj wspólnie</h3>
+            <p>Znajduj ludzi do projektów, aplikacji, botów i eksperymentów.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>03</span>
+          <div>
+            <h3>Rozwijaj się</h3>
+            <p>Pokazuj swoje projekty, zbieraj opinie i zdobywaj doświadczenie.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="areas">
+    <div class="center">
+      <span class="eyebrow">02 / TWOJA STREFA</span>
+      <h2>Znajdź swój <span>obszar.</span></h2>
+      <p>Różne zainteresowania. Jeden rój.</p>
+    </div>
+
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-icon">⌨</div>
+        <small>01 — BUILD</small>
+        <h3>Programowanie</h3>
+        <p>Python, JavaScript, C++, aplikacje, strony i automatyzacja.</p>
+      </article>
+
+      <article class="area-card">
+        <div class="area-icon">▤</div>
+        <small>02 — HOST</small>
+        <h3>Linux i serwery</h3>
+        <p>Systemy, sieci, homelaby, self-hosting i administracja.</p>
+      </article>
+
+      <article class="area-card">
+        <div class="area-icon">⌁</div>
+        <small>03 — SECURE</small>
+        <h3>Cyberbezpieczeństwo</h3>
+        <p>Bezpieczeństwo systemów, prywatność i etyczne testowanie.</p>
+      </article>
+
+      <article class="area-card">
+        <div class="area-icon">✳</div>
+        <small>04 — EXPLORE</small>
+        <h3>AI i technologie</h3>
+        <p>Sztuczna inteligencja, sprzęt, open source i nowe pomysły.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="project-section" id="projects">
+    <div class="section project-grid">
+      <div>
+        <span class="eyebrow">03 / ZRÓBMY COŚ</span>
+        <h2>Najlepszy kod<br>to ten, który <span>powstaje.</span></h2>
+        <p>
+          Masz pomysł na aplikację, bota, stronę lub własny serwer?
+          Znajdź ekipę, pokaż postępy i zamień plan w działający projekt.
+        </p>
+        <a class="button primary" href="#join">Pokaż, co potrafisz ↗</a>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <span>● ● ●</span>
+          <span>beeservice / community</span>
+        </div>
+        <pre><span>$</span> git init ideas
+
+<span class="green">✓ Project initialized.</span>
+
+<span>$</span> ./build-together.sh
+
+<span class="yellow">✓ Pomysł
+✓ Współpraca
+✓ Pierwszy commit</span>
+
+<span>$</span> <span class="cursor">▌</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section join" id="join">
+    <span class="eyebrow">04 / TWOJA KOLEJ</span>
+    <h2>Dołącz do <span>roju.</span></h2>
+    <p>
+      Technologia rozwija się szybciej, gdy robimy to razem.
+      Wskakuj do BeeService i zacznij budować coś fajnego.
+    </p>
+
+    <!-- Zmień link na własne zaproszenie Discord -->
+    <a class="button primary" href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+      Dołącz na Discordzie ↗
+    </a>
+    <p class="hint">Pamiętaj, aby wkleić tutaj link do swojego serwera.</p>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#home">
+    <img src="assets/logo.png" alt="">
+    <span>Bee<span class="white">Service</span></span>
+  </a>
+  <p>Stworzone z ciekawości. Napędzane współpracą.</p>
+  <small>© <span id="year"></span> BeeService</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
