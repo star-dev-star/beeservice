@@ -1,16 +1,24 @@
-// script.js — placeholder
-document.addEventListener('DOMContentLoaded',()=>{
-  const yearEl = document.getElementById('year');
-  if(yearEl) yearEl.textContent = new Date().getFullYear();
+const menuToggle = document.querySelector("#menu-toggle");
+const nav = document.querySelector("#nav");
 
-  // Mobile menu toggle
-  const menuToggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('nav');
-  if(menuToggle && nav){
-    menuToggle.addEventListener('click',()=>{
-      nav.classList.toggle('open');
-    });
-  }
+menuToggle.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("open");
 
-  console.log('BeeService page loaded');
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Zamknij menu" : "Otwórz menu"
+  );
 });
+
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+document.querySelector("#year").textContent =
+  new Date().getFullYear();
