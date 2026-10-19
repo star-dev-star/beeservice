@@ -11,15 +11,17 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
 <header class="navbar">
   <a class="brand" href="#home">
     <img src="assets/logo.png" alt="BeeService logo">
     <span>Bee<span class="white">Service</span></span>
   </a>
 
-  <button id="menu-toggle" aria-label="Otwórz menu">☰</button>
+  <button id="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Otwórz menu">☰</button>
 
-  <nav id="nav">
+  <nav id="nav" role="navigation" aria-hidden="true">
     <a href="#about">O nas</a>
     <a href="#areas">Strefy</a>
     <a href="#projects">Projekty</a>
@@ -27,7 +29,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main">
   <section class="hero section" id="home">
     <div class="hero-content">
       <span class="eyebrow">🐝 SPOŁECZNOŚĆ LUDZI TECHNOLOGII</span>
@@ -185,7 +187,7 @@
 
 <footer>
   <a class="brand" href="#home">
-    <img src="assets/logo.png" alt="">
+    <img src="assets/logo.png" alt="BeeService logo">
     <span>Bee<span class="white">Service</span></span>
   </a>
   <p>Stworzone z ciekawości. Napędzane współpracą.</p>
